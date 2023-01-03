@@ -1,0 +1,128 @@
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+:root {
+    --primary-bg: #ccffff;
+    --secondary-bg: #9a99ff;
+    --brown: #453c34;
+}
+
+.social,
+.splide__container, .about {
+    background-color: var(--primary-bg);
+}
+.splide__container{
+    border-bottom: 1px solid #525d58;
+}
+.navbar, .footer {
+    background-color: var(--secondary-bg);
+}
+.navbar{
+    border-top: 1px solid #525d58;
+    border-bottom: 1px solid #525d58;
+}
+.navbar .nav-link {
+    color: #000;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.splide {
+    height: 540px;
+    padding-bottom: 70px;
+}
+.splide__track {
+    height: 100%;
+}
+.splide__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1 !important;
+}
+.splide__arrow svg {
+    fill: #fff;
+}
+.splide__pagination {
+    bottom: 30px;
+}
+.splide__pagination__page {
+    width: 16px;
+    height: 16px;
+    background-color: #8aabab !important;
+    transform: scale(1) !important;
+}
+.splide__pagination__page::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.splide__pagination__page.is-active::before{
+    background-color: #ac504d;
+}
+
+.u_card {
+    border: none;
+}
+.card__content {
+    background-color: #9999ff;
+}
+.u_card a {
+    color: #e65596;
+}
+.u_card p,
+.destinations__title {
+    color: var(--brown);
+}
+
+.destinations__title {
+    font-size: 20px;
+}
+
+.about{
+    border-top: 1px solid #7874ae;
+    border-bottom: 1px solid #7874ae;
+}
+.about__title{
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+}
+.about p{
+    color: #333;
+}
+.subscribe__btn{
+    background-color: #72a05b !important;
+    border-color: #4a5740 !important;
+    color: #fff !important;
+}
+.footer li a {
+    color: #050509;
+    font-weight: 700;
+}
+.footer p{
+    color: #7a6e75;
+}
+
+@media (max-width: 991px) {
+    .splide{
+        height: 440px;
+    }
+}
+@media (max-width: 440px) {
+    .navbar-brand img{
+        width: 100%;
+    }
+    .splide{
+        height: 400px;
+    }
+}
